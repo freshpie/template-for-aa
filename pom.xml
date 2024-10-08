@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>template</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>template</name>
+	<artifactId>todoApp</artifactId>
+	<version>1.0</version>
+	<name>TodoApp</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -84,10 +84,6 @@
 	<build>
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			 <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
