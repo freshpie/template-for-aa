@@ -30,3 +30,6 @@ INSERT INTO todo_reference (prev_todo_id, current_todo_id) VALUES (9, 5);
 INSERT INTO todo_reference (prev_todo_id, current_todo_id) VALUES (1, 15);
 INSERT INTO todo_reference (prev_todo_id, current_todo_id) VALUES (2, 15);
 INSERT INTO todo_reference (prev_todo_id, current_todo_id) VALUES (12, 13);
+
+
+INSERT INTO user_info (user_id) VALUES (82023143);
