@@ -22,7 +22,7 @@ spec:
       volumes:
       - name: "todoapp-volume"
         persistentVolumeClaim:
-          claimName: ce-aa-pvc
+          claimName: "todoapp-volume"
       - name: application-properties
         configMap:
           name: "todoapp-configmap"
