@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: "todoapp-volume"
+  name: "todoapp-pvc"
 spec:
   accessModes:
     - ReadWriteMany
