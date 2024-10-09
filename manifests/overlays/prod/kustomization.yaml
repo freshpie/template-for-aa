@@ -1,7 +1,7 @@
 configMapGenerator:
 - files:
   - application.yml
-  name: "todo_app-configmap"
+  name: "todoapp-configmap"
 resources:
 - ../../base
 - pvc.yaml
