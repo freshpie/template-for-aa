@@ -12,4 +12,4 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
 - name: ceappacr.azurecr.io/todo_app
-  newTag: "202410090601"
+  newTag: "202410090613"
