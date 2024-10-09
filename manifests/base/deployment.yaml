@@ -6,14 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: "todo_app"
+      app: "todoapp"
   template:
     metadata:
       labels:
-        app: "todo_app"
+        app: "todoapp"
     spec:
       containers:
-        - name: "todo_app"
+        - name: "todoapp"
           image: ceappacr.azurecr.io/todo_app
           ports:
           - containerPort: 8080

@@ -6,4 +6,4 @@ spec:
     ports:
     - port: 8080 
     selector:
-        app: "todo_app"
+        app: "todoapp"
