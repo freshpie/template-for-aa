@@ -1,0 +1,32 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "todo_app-deployment"
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: "todo_app"
+          command: ["java","-jar","/app.jar"]
+          args: ["--spring.config.location=file:/config/application.yml"]
+          volumeMounts:
+          - mountPath: /mnt/todo_app
+            name: "todo_app-volume"
+            readOnly: false
+            subPath: todo_app
+          - mountPath: /config
+            name: application-properties
+            readOnly: true
+                          
+      volumes:
+      - name: "todo_app-volume"
+        persistentVolumeClaim:
+          claimName: ce-aa-pvc
+      - name: application-properties
+        configMap:
+          name: "todo_app-configmap"
+          items:
+            - key: application.yml
+              path: application.yml
+          defaultMode: 420
