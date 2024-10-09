@@ -1,19 +1,19 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: "82023143"
+  name: "todo_app-deployment"
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: "82023143"
+      app: "todo_app"
   template:
     metadata:
       labels:
-        app: "82023143"
+        app: "todo_app"
     spec:
       containers:
-        - name: "82023143"
-          image: ceappacr.azurecr.io/82023143
+        - name: "todo_app"
+          image: ceappacr.azurecr.io/todo_app
           ports:
           - containerPort: 8080

@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: my-82023143
+    name: todo_app-service
 spec:
     ports:
     - port: 8080 
     selector:
-        app: "82023143"
+        app: "todo_app"
